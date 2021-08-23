@@ -12,10 +12,10 @@ test.describe('', () => {
 ); 
     test.beforeEach(async () => {
         dashboard = new dashboardPage(page);
-        await dashboard.goto();
     });
-    test('basic test', async () => {
+    test('basic test simo', async () => {
         await dashboard.gotoDay('Antradienis');
+        
     }); 
     test('basic test', async () => {
         // await page.isVisible('.v-list__tile v-list__tile--link theme--light')
@@ -64,6 +64,9 @@ test.describe('', () => {
 
         // Click button:has-text("5.10 €send")
         await page.click('button:has-text("5.10 €send")');
+    });
+    test('tesukas ', async () => {
+        await page.goto('https://lunch.devbstaging.com/login-password');
     });
 });
 
