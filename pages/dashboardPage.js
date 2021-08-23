@@ -9,8 +9,12 @@ exports.dashboardPage = class lunchDBPage {
         await this.page.goto('https://lunch.devbstaging.com/');
     }
 
-    async gotoDay(day)
-    {
+    async gotoDay(day) {
         await this.page.click('text=' + day);
     } 
+
+    async gotoProvider(product)
+    {
+        await this.page.click('text=' + product)
+    }
 }
